@@ -1,4 +1,4 @@
-FROM pretix/standalone:${SOFTWARE_VERSION_TAG}
+FROM pretix/standalone:latest
 
 COPY ./etc/pretix /etc/pretix
 COPY ./scripts/0001_initial.py /pretix/src/pretix/base/migrations/0001_initial.py
